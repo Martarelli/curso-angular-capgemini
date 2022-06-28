@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class MultiplicaPorPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(valor: number, multiplicador: number): number {
+    return valor * multiplicador;
   }
 
 }
