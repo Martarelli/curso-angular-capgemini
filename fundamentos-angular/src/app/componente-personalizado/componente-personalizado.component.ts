@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-componente-personalizado',
   templateUrl: './componente-personalizado.component.html',
   styleUrls: ['./componente-personalizado.component.css']
 })
-export class ComponentePersonalizadoComponent implements OnInit {
+export class ComponentePersonalizadoComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  @Input() nome: string = "";
+  @Input() sobrenome: string = "";
 
 }
