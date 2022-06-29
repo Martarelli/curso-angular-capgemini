@@ -5,5 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class LoggerService {
 
-  constructor() { }
+  mensagens: string[] = [];
+
+  logar(mensagem:string): void{
+    console.log(mensagem);
+    this.mensagens.push(mensagem)
+  }
+
+  exibeTodosOsLogs(): void{
+    console.log(this.mensagens)
+  }
+
 }
