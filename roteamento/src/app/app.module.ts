@@ -7,6 +7,7 @@ import { PrimeiraPaginaComponent } from './primeira-pagina/primeira-pagina.compo
 import { SegundaPaginaComponent } from './segunda-pagina/segunda-pagina.component';
 import { PaginaComParametrosComponent } from './pagina-com-parametros/pagina-com-parametros.component';
 import { PaginaProtegidaComponent } from './pagina-protegida/pagina-protegida.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PaginaProtegidaComponent } from './pagina-protegida/pagina-protegida.co
     PrimeiraPaginaComponent,
     SegundaPaginaComponent,
     PaginaComParametrosComponent,
-    PaginaProtegidaComponent
+    PaginaProtegidaComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
